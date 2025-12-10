@@ -1,5 +1,3 @@
-# React + Vite
-
 # 🚀  React Dashboard Project  
 ### Todo App + Registration Wizard + Profile Management (Recoil + Formik + Yup + Context + Tailwind)
 
@@ -102,4 +100,69 @@ Sidebar navigation:
 
 ## 📁 **Project Structure**
 
+src/
+├── components/
+│ ├── registration/
+│ │ ├── Step1_Personal.jsx
+│ │ ├── Step2_Address.jsx
+│ │ ├── Step3_DocUpload.jsx
+│ │ └── Step4_ReviewSubmit.jsx
+│ ├── settings/
+│ │ ├── ViewProfile.jsx
+│ │ ├── EditProfile.jsx
+│ │ └── UploadImage.jsx
+│ └── Dashboard.jsx
+│
+├── hooks/
+│ ├── useStepper.js
+│ ├── useTodosReducer.js
+│ ├── useTheme.js
+│ └── useLocalStorage.js
+│
+├── recoil/
+│ ├── authAtom.js
+│ ├── dashboardAtom.js
+│ ├── registrationAtom.js
+│ ├── todoAtom.js
+│ └── themeAtom.js
+│
+├── pages/
+│ └── Products.jsx
+│
+├── App.jsx
+└── main.jsx
+
+yaml
+Copy code
+
+---
+
+## ▶️ **How to Run the Project**
+
+### 1️⃣ Install dependencies
+```sh
+npm install
+2️⃣ Run development server
+sh
+Copy code
+npm run dev
+3️⃣ Open in browser
+Navigate to:
+
+http://localhost:5173/
+🌐 Deployment
+You can deploy this project easily on:
+
+Netlify
+
+Vercel
+
+GitHub Pages
+
+Just connect your GitHub repo → Select vite preset.
+
+
+
+👩‍💻 Created By
+Sanika Rode
 
