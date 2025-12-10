@@ -1,18 +1,105 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🚀  React Dashboard Project  
+### Todo App + Registration Wizard + Profile Management (Recoil + Formik + Yup + Context + Tailwind)
 
-Currently, two official plugins are available:
+This project is a complete React-based productivity dashboard that includes:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✔️ Multi-Step Registration Wizard (Formik + Yup + Recoil + FormData)
+- ✔️ Todo App with CRUD, Mark Complete (useReducer + Recoil + LocalStorage)
+- ✔️ Theme Switcher (Light / Dark Mode using Recoil)
+- ✔️ User Authentication (Login / Signup)
+- ✔️ Profile Management (View / Edit / Upload Image)
+- ✔️ Modern UI using Tailwind CSS
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 📌 **Features Overview**
 
-Note: This will impact Vite dev & build performances.
+### 🔐 **1. User Authentication**
+- Login / Signup pages  
+- OTP generation (optional demo mode)  
+- Auth state managed using **Recoil**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 📝 **2. Multi-Step Registration Wizard (Task 3)**  
+Built using:
+- **Formik**
+- **Yup Validation**
+- **Recoil (global registrationAtom)**
+- **Custom hook → useStepper()**
+- **FormData for document upload**
+
+#### Wizard Steps:
+1. **Personal Details**
+2. **Address Details**
+3. **Document Upload**
+4. **Review & Submit**
+
+All data is stored in **Recoil** and displayed on the final review step.
+
+---
+
+### ✅ **3. Todo App with CRUD (Task 4)**  
+Built using:
+- `useReducer()` → Task state logic  
+- `Recoil → todoAtom` → Global state  
+- `useLocalStorage()` → Permanent save  
+- Tailwind UI  
+
+#### Todo Features:
+- Add Task  
+- Edit Task  
+- Delete Task  
+- Mark Complete  
+- Persist tasks even after refresh  
+- Smooth & clean UI  
+
+---
+
+### 🌗 **4. Theme Switcher (Light/Dark)**  
+Using:
+- Recoil → `themeAtom`  
+- Custom hook: `useTheme()`  
+- Saves theme in LocalStorage  
+- Applies global dark/light styles  
+
+---
+
+### 👤 **5. Profile Management**
+Inside Dashboard → Settings:
+- View Profile  
+- Edit Profile  
+- Upload Profile Image (FormData)  
+- Profile context handled through Recoil  
+
+---
+
+### 📂 **6. Dashboard Navigation**
+Sidebar navigation:
+- My Day (Todo App)
+- Important
+- Planned
+- Tasks
+- Products Page
+- Registration Wizard
+- Profile Settings
+
+---
+
+## 🛠️ **Tech Stack**
+
+### Frontend:
+- **React (Vite)**
+- **Recoil** (state management)
+- **Formik + Yup** (form handling & validation)
+- **Tailwind CSS**
+- **React Router**
+- **Custom Hooks**
+
+---
+
+## 📁 **Project Structure**
+
+
